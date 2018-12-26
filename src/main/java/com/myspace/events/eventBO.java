@@ -26,11 +26,12 @@ public class eventBO implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("status")
 	private java.lang.Boolean status;
 
-	@org.kie.api.definition.type.Label("caseStatus")
-	private java.lang.String caseStatus;
-
-	@org.kie.api.definition.type.Label(value = "isReopened")
+	@org.kie.api.definition.type.Label("isReopened")
 	private java.lang.Boolean isReopened;
+
+	@javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+	@org.kie.api.definition.type.Label(value = "caseStatus")
+	private java.util.List<java.lang.String> caseStatus;
 
 	public eventBO() {
 	}
@@ -75,14 +76,6 @@ public class eventBO implements java.io.Serializable {
 		this.status = status;
 	}
 
-	public java.lang.String getCaseStatus() {
-		return this.caseStatus;
-	}
-
-	public void setCaseStatus(java.lang.String caseStatus) {
-		this.caseStatus = caseStatus;
-	}
-
 	public java.lang.Boolean getIsReopened() {
 		return this.isReopened;
 	}
@@ -91,17 +84,25 @@ public class eventBO implements java.io.Serializable {
 		this.isReopened = isReopened;
 	}
 
+	public java.util.List<java.lang.String> getCaseStatus() {
+		return this.caseStatus;
+	}
+
+	public void setCaseStatus(java.util.List<java.lang.String> caseStatus) {
+		this.caseStatus = caseStatus;
+	}
+
 	public eventBO(java.lang.Long id, java.lang.String name,
 			java.lang.String contact, java.lang.String address,
-			java.lang.Boolean status, java.lang.String caseStatus,
-			java.lang.Boolean isReopened) {
+			java.lang.Boolean status, java.lang.Boolean isReopened,
+			java.util.List<java.lang.String> caseStatus) {
 		this.id = id;
 		this.name = name;
 		this.contact = contact;
 		this.address = address;
 		this.status = status;
-		this.caseStatus = caseStatus;
 		this.isReopened = isReopened;
+		this.caseStatus = caseStatus;
 	}
 
 }
