@@ -5,6 +5,7 @@ package com.myspace.events;
  */
 
 @javax.persistence.Entity
+@javax.persistence.Table(name = "caseStatusTable")
 public class caseStatusBO implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
@@ -14,13 +15,13 @@ public class caseStatusBO implements java.io.Serializable {
 	@javax.persistence.SequenceGenerator(sequenceName = "CASESTATUSBO_ID_SEQ", name = "CASESTATUSBO_ID_GENERATOR")
 	private java.lang.Long id;
 
-	@org.kie.api.definition.type.Label(value = "processInstanceId")
+	@org.kie.api.definition.type.Label("processInstanceId")
 	private java.lang.Long processInstanceId;
 
-	@org.kie.api.definition.type.Label(value = "isReopenedCase")
+	@org.kie.api.definition.type.Label("isReopenedCase")
 	private java.lang.Boolean isReopenedCase;
 
-	@org.kie.api.definition.type.Label(value = "startDate")
+	@org.kie.api.definition.type.Label("startDate")
 	private java.lang.String startDate;
 
 	public caseStatusBO() {
