@@ -7,29 +7,63 @@ package com.myspace.events;
 @javax.persistence.Entity
 public class caseStatusBO implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "CASESTATUSBO_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "CASESTATUSBO_ID_SEQ", name = "CASESTATUSBO_ID_GENERATOR")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(generator = "CASESTATUSBO_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(sequenceName = "CASESTATUSBO_ID_SEQ", name = "CASESTATUSBO_ID_GENERATOR")
+	private java.lang.Long id;
 
-    public caseStatusBO() {
-    }
-    
-    public caseStatusBO(java.lang.Long id) {
-        this.id = id;
-    }
+	@org.kie.api.definition.type.Label(value = "processInstanceId")
+	private java.lang.Long processInstanceId;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	@org.kie.api.definition.type.Label(value = "isReopenedCase")
+	private java.lang.Boolean isReopenedCase;
 
+	@org.kie.api.definition.type.Label(value = "startDate")
+	private java.lang.String startDate;
 
+	public caseStatusBO() {
+	}
 
+	public java.lang.Long getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
+	public java.lang.Long getProcessInstanceId() {
+		return this.processInstanceId;
+	}
+
+	public void setProcessInstanceId(java.lang.Long processInstanceId) {
+		this.processInstanceId = processInstanceId;
+	}
+
+	public java.lang.Boolean getIsReopenedCase() {
+		return this.isReopenedCase;
+	}
+
+	public void setIsReopenedCase(java.lang.Boolean isReopenedCase) {
+		this.isReopenedCase = isReopenedCase;
+	}
+
+	public java.lang.String getStartDate() {
+		return this.startDate;
+	}
+
+	public void setStartDate(java.lang.String startDate) {
+		this.startDate = startDate;
+	}
+
+	public caseStatusBO(java.lang.Long id, java.lang.Long processInstanceId,
+			java.lang.Boolean isReopenedCase, java.lang.String startDate) {
+		this.id = id;
+		this.processInstanceId = processInstanceId;
+		this.isReopenedCase = isReopenedCase;
+		this.startDate = startDate;
+	}
 
 }
