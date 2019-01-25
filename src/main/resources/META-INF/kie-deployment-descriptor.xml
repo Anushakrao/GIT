@@ -18,6 +18,12 @@
     <work-item-handlers>
         <work-item-handler>
             <resolver>mvel</resolver>
+            <identifier>new org.jbpm.process.workitem.google.tasks.GetTasksWorkitemHandler("appName", "clentSecret")</identifier>
+            <parameters/>
+            <name>GoogleGetTasks</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
             <identifier>new org.jbpm.process.workitem.rest.RESTWorkItemHandler("krisv","krisv")</identifier>
             <parameters/>
             <name>Rest</name>
