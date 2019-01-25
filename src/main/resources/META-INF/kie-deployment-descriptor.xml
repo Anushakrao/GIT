@@ -18,12 +18,6 @@
     <work-item-handlers>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.google.tasks.GetTasksWorkitemHandler("appName", "clentSecret")</identifier>
-            <parameters/>
-            <name>GoogleGetTasks</name>
-        </work-item-handler>
-        <work-item-handler>
-            <resolver>mvel</resolver>
             <identifier>new org.jbpm.process.workitem.rest.RESTWorkItemHandler("krisv","krisv")</identifier>
             <parameters/>
             <name>Rest</name>
@@ -33,12 +27,6 @@
             <identifier>new org.jbpm.bpmn2.handler.ReceiveTaskHandler(ksession)</identifier>
             <parameters/>
             <name>Receive Task</name>
-        </work-item-handler>
-        <work-item-handler>
-            <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.google.tasks.AddTaskWorkitemHandler("appName", "clentSecret")</identifier>
-            <parameters/>
-            <name>GoogleAddTask</name>
         </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
