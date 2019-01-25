@@ -98,7 +98,7 @@
                                  "org.jbpm.contrib:google-tasks-workitem:7.17.0-SNAPSHOT"
 
             ],
-            "icon" : "GoogleAddTask.png"
+            "icon" : "defaultservicenodeicon.png"
 
         ]
     ,[
@@ -121,7 +121,7 @@
                                  "org.jbpm.contrib:google-tasks-workitem:7.17.0-SNAPSHOT"
 
             ],
-            "icon" : "GoogleGetTasks.png"
+            "icon" : "defaultservicenodeicon.png"
 
         ]
 
