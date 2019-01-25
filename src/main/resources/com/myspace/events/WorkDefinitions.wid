@@ -79,51 +79,9 @@
      "displayName" : "Decision Task",
      "icon" : "defaultdecisionicon.png",
      "category" : "Decision tasks"
-   ],
+   ]
    
-        [
-            "name" : "GoogleAddTask",
-            "displayName" : "GoogleAddTask",
-            "category" : "google-tasks-workitem",
-            "description" : "",
-            "defaultHandler" : "mvel: new org.jbpm.process.workitem.google.tasks.AddTaskWorkitemHandler(\"appName\", \"clentSecret\")",
-            "documentation" : "google-tasks-workitem/index.html",
-
-            "parameters" : [
-                                "TaskName" : new StringDataType()
-                ,"TaskKind" : new StringDataType()
-
-            ],
-            "mavenDependencies" : [
-                                 "org.jbpm.contrib:google-tasks-workitem:7.17.0-SNAPSHOT"
-
-            ],
-            "icon" : "defaultservicenodeicon.png"
-
-        ]
-    ,[
-            "name" : "GoogleGetTasks",
-            "displayName" : "GoogleGetTasks",
-            "category" : "google-tasks-workitem",
-            "description" : "",
-            "defaultHandler" : "mvel: new org.jbpm.process.workitem.google.tasks.GetTasksWorkitemHandler(\"appName\", \"clentSecret\")",
-            "documentation" : "google-tasks-workitem/index.html",
-
-            "parameters" : [
-                                "NumOfTasks" : new StringDataType()
-
-            ],
-            "results" : [
-                                "FoundTasks" : new StringDataType()
-
-            ],
-            "mavenDependencies" : [
-                                 "org.jbpm.contrib:google-tasks-workitem:7.17.0-SNAPSHOT"
-
-            ],
-            "icon" : "defaultservicenodeicon.png"
-
-        ]
+       
 
 
 
