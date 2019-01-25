@@ -79,7 +79,7 @@
      "displayName" : "Decision Task",
      "icon" : "defaultdecisionicon.png",
      "category" : "Decision tasks"
-   ]
+   ],
    [
         [
             "name" : "GoogleAddTask",
