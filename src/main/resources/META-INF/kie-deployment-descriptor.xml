@@ -28,6 +28,12 @@
             <parameters/>
             <name>Receive Task</name>
         </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new org.jbpm.process.workitem.google.tasks.AddTaskWorkitemHandler("appName", "clentSecret")</identifier>
+            <parameters/>
+            <name>GoogleAddTask</name>
+        </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
     <configurations/>
