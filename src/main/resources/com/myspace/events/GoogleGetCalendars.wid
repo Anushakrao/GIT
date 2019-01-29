@@ -1,0 +1,96 @@
+[
+        [
+            "name" : "GoogleAddCalendar",
+            "displayName" : "GoogleAddCalendar",
+            "category" : "google-calendar-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.google.calendar.AddCalendarWorkitemHandler(\"appName\", \"clentSecret\")",
+            "documentation" : "google-calendar-workitem/index.html",
+
+            "parameters" : [
+                                "CalendarSummary" : new StringDataType()
+
+            ],
+            "results" : [
+                                "Calendar" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:google-calendar-workitem:7.17.0-SNAPSHOT"
+
+            ],
+            "icon" : "GoogleAddCalendar.png"
+
+        ]
+    ,[
+            "name" : "GoogleGetCalendars",
+            "displayName" : "GoogleGetCalendars",
+            "category" : "google-calendar-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.google.calendar.GetCalendarsWorkitemHandler(\"appName\", \"clentSecret\")",
+            "documentation" : "google-calendar-workitem/index.html",
+
+            "results" : [
+                                "AllCalendars" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:google-calendar-workitem:7.17.0-SNAPSHOT"
+
+            ],
+            "icon" : "GoogleGetCalendars.png"
+
+        ]
+    ,[
+            "name" : "GoogleAddEvent",
+            "displayName" : "GoogleAddEvent",
+            "category" : "google-calendar-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.google.calendar.AddEventWorkitemHandler(\"appName\", \"clentSecret\")",
+            "documentation" : "google-calendar-workitem/index.html",
+
+            "parameters" : [
+                                "CalendarSummary" : new StringDataType()
+                ,"EventSummary" : new StringDataType()
+                ,"EventStart" : new StringDataType()
+                ,"EventEnd" : new StringDataType()
+                ,"EventCreator" : new StringDataType()
+                ,"EventAttendees" : new StringDataType()
+
+            ],
+            "results" : [
+                                "Event" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:google-calendar-workitem:7.17.0-SNAPSHOT"
+
+            ],
+            "icon" : "GoogleAddEvent.png"
+
+        ]
+    ,[
+            "name" : "GoogleGetEvents",
+            "displayName" : "GoogleGetEvents",
+            "category" : "google-calendar-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.google.calendar.GetEventsWorkitemHandler(\"appName\", \"clentSecret\")",
+            "documentation" : "google-calendar-workitem/index.html",
+
+            "parameters" : [
+                                "CalendarSummary" : new StringDataType()
+
+            ],
+            "results" : [
+                                "AllEvents" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:google-calendar-workitem:7.17.0-SNAPSHOT"
+
+            ],
+            "icon" : "GoogleGetEvents.png"
+
+        ]
+
+]
