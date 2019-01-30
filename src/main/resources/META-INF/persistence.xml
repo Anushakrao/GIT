@@ -4,6 +4,7 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>java:jboss/datasources/jbpmDS</jta-data-source>
         <class>com.myspace.events.caseStatusBO</class>
+        <class>com.myspace.events.newData</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.max_fetch_depth" value="3"/>
